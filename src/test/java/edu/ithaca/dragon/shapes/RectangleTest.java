@@ -40,6 +40,14 @@ public class RectangleTest {
 
     @Test
     public void longestLineWithinTest(){
+        Rectangle myRec=new Rectangle(5,5);
+        assertEquals(5,myRec.longestLineWithin() );
+
+        myRec=new Rectangle(6.5,2);
+        assertEquals(6.5,myRec.longestLineWithin());
+
+        myRec=new Rectangle(0.5,0.3);
+        assertEquals(.5, myRec.longestLineWithin());
 
     }
     
