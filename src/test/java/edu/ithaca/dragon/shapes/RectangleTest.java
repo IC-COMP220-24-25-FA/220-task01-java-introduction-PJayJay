@@ -23,6 +23,18 @@ public class RectangleTest {
 
     @Test
     public void doubleSizeTest(){
+        Rectangle myRec=new Rectangle(5,5);
+        myRec.doubleSize();
+        assertEquals(100,myRec.calcArea() );
+
+        myRec=new Rectangle(6.5,2);
+        myRec.doubleSize();
+        assertEquals(52,myRec.calcArea());
+
+        myRec=new Rectangle(0.5,0.3);
+        myRec.doubleSize();
+        assertEquals(.6, myRec.calcArea());
+
 
     }
 
