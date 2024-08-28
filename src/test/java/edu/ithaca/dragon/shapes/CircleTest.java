@@ -46,6 +46,7 @@ public class CircleTest {
 
     }
 
+    @Test
     public void longestLineWithinTest(){
         Circle myCircle = new Circle(1);
         assertEquals(2, myCircle.longestLineWithin(), 0.0001);
