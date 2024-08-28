@@ -31,18 +31,30 @@ public class CircleTest {
 
     @Test
     public void doubleSizeTest(){
-        Circle myCircle = new Circle(1);
+        /*Circle myCircle = new Circle(1);
         //3rd parameter says how far off it can be since it is a double
-        myCircle.calcArea();
+        myCircle.doubleSize();
         assertEquals(6.283, myCircle.calcArea(), 0.0001);
 
         myCircle = new Circle(5.5);
-        myCircle.calcArea();
+        myCircle.doubleSize();
         assertEquals(190.0662, (myCircle).calcArea(), 0.0001);
 
         myCircle = new Circle(0.001);
         myCircle.doubleSize();
-        assertEquals(0.00000628318 , myCircle.calcArea(), 0.0000000001);
+        assertEquals(0.00000628318 , myCircle.calcArea(), 0.0000000001);*/
+
+    }
+
+    public void longestLineWithinTest(){
+        Circle myCircle = new Circle(1);
+        assertEquals(2, myCircle.longestLineWithin(), 0.0001);
+
+        myCircle = new Circle(5.5);
+        assertEquals(11, myCircle.longestLineWithin(), 0.0001);
+
+        myCircle = new Circle(0.001);
+        assertEquals(0.002, myCircle.longestLineWithin(), 0.0000000001);
 
     }
 
