@@ -25,7 +25,11 @@ public class Triangle {
 
     public double longestLineWithin(){
 
-        return 0.0;
+        double aSquared=height*height;
+        double bSquared=width*width;
+        double cSquared=aSquared+bSquared;
+        return Math.sqrt(cSquared);
+
     }
     
 }
