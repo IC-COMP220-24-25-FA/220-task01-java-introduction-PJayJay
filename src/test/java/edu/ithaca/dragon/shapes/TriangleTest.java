@@ -20,6 +20,16 @@ public class TriangleTest {
 
     @Test
     public void testDouble(){
+        Triangle tester=new Triangle(5,5);
+        tester.doubleSize();
+        assertEquals(50, tester.calcArea());
+
+        tester.doubleSize();
+        assertEquals(200, tester.calcArea());
+
+        tester=new Triangle(.5, 1)
+        tester.doubleSize();
+        assertEquals(1, tester.calcArea());
 
 
     }
