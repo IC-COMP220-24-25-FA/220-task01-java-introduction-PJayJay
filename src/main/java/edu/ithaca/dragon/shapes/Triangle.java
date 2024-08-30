@@ -1,15 +1,19 @@
 package edu.ithaca.dragon.shapes;
 
-public class Triangle {
-    private int height;
-    private int width;
+import javax.management.RuntimeErrorException;
 
-    public Triangle(int h, int w){
+public class Triangle {
+    private double height;
+    private double width;
+
+    public Triangle(double h, double w){
         height=h;
         width=w;
     }
 
     public double calcArea(){
+
+        return 0.0;
 
     }
 
@@ -19,7 +23,7 @@ public class Triangle {
 
     public double longestLineWithin(){
 
-        
+        return 0.0;
     }
     
 }
