@@ -13,7 +13,7 @@ public class Triangle {
 
     public double calcArea(){
 
-        return 0.0;
+        return (height*width)/2.0;
 
     }
 
