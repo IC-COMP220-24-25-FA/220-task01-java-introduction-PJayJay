@@ -37,6 +37,13 @@ public class TriangleTest {
     @Test
     public void testLongestLineWithin(){
 
+        Triangle tester=new Triangle(5,5);
+        assertEquals(Math.sqrt(50), tester.longestLineWithin());
 
+        tester=new Triangle(10,60);
+        assertEquals(Math.sqrt(3700), tester.longestLineWithin());
+
+        tester=new Triangle(.5,1);
+        assertEquals(Math.sqrt(1.25), tester.longestLineWithin());
     }
 }
