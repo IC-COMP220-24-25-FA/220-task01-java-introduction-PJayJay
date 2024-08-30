@@ -18,6 +18,8 @@ public class Triangle {
     }
 
     public void doubleSize(){
+        height=height*2;
+        width=width*2;
 
     }
 
