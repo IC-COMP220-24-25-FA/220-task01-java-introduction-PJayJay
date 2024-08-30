@@ -27,7 +27,7 @@ public class TriangleTest {
         tester.doubleSize();
         assertEquals(200, tester.calcArea());
 
-        tester=new Triangle(.5, 1)
+        tester=new Triangle(.5, 1);
         tester.doubleSize();
         assertEquals(1, tester.calcArea());
 
