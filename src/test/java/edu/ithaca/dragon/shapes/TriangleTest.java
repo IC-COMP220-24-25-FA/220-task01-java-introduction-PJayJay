@@ -14,6 +14,7 @@ public class TriangleTest {
         assertEquals(150, tester.calcArea());
 
         tester=new Triangle(.5,1);
+        assertEquals(.25,tester.calcArea());
 
     }
 
