@@ -21,12 +21,9 @@ public class Rectangle {
     }
 
     public double longestLineWithin(){
-        if (this.length>this.width){
-            return this.length;
-        }
-        else{
-            return this.width;
-        }
+        double cSquared=((double)this.length*this.length)+((double)this.width*this.width);
+        double cFinal=Math.sqrt(cSquared);
+        return cFinal;
     }
     
 }
