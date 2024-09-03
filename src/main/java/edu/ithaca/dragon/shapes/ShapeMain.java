@@ -33,6 +33,7 @@ public class ShapeMain {
                     System.out.println("Which rectangle do you want to double? 0,1,2,3,4?");
                     whichOne = newObj.nextInt();
                 }
+                listed.get(whichOne).doubleSize();
             }
 
         }
