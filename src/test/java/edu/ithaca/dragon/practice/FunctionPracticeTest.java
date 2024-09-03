@@ -6,6 +6,9 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.jupiter.api.Test;
 
 public class FunctionPracticeTest {
@@ -28,6 +31,20 @@ public class FunctionPracticeTest {
         assertEquals(44.1,FunctionPractice.calcSalePrice(60, .30, .050));
         assertEquals(16.8, FunctionPractice.calcSalePrice(30, .5, .12));
         assertEquals(82.5, FunctionPractice.calcSalePrice(100,.25,.1));
+    }
+
+    @Test
+    public void findMostTest(){
+        List<String> tester= new ArrayList<String>();
+        tester.add("howdy");
+        tester.add("wow");
+        tester.add("wowww");
+        assertEquals("wowww", FunctionPractice.findFirstMostOccurencesOfLetter(tester, 'w'));
+        tester.add("nahh");
+        assertEquals("nahh", FunctionPractice.findFirstMostOccurencesOfLetter(tester, 'h'));
+        tester.add("that");
+        tester.add("what");
+        assertEquals("howdy", FunctionPractice.findFirstMostOccurencesOfLetter(tester, 'h'));
     }
     
 }
