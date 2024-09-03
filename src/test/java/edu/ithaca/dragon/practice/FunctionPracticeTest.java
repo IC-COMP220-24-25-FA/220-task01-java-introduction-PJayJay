@@ -42,9 +42,9 @@ public class FunctionPracticeTest {
         assertEquals("wowww", FunctionPractice.findFirstMostOccurencesOfLetter(tester, 'w'));
         tester.add("nahh");
         assertEquals("nahh", FunctionPractice.findFirstMostOccurencesOfLetter(tester, 'h'));
-        tester.add("that");
+        tester.add("thatd");
         tester.add("what");
-        assertEquals("howdy", FunctionPractice.findFirstMostOccurencesOfLetter(tester, 'h'));
+        assertEquals("howdy", FunctionPractice.findFirstMostOccurencesOfLetter(tester, 'd'));
     }
     
 }
