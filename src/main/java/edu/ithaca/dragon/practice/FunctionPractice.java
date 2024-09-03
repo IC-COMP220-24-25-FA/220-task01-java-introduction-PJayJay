@@ -28,10 +28,6 @@ public class FunctionPractice {
     }
 
     
-    public static void testLargestOfThree(){
-
-    }
-    
     /**
      * @return the final price at register of the given item after discount and tax applied
      */
@@ -70,9 +66,7 @@ public class FunctionPractice {
         throw new RuntimeException("Not Implemented");
     }
 
-    public static void main(){
 
-    }
 
 
 }
