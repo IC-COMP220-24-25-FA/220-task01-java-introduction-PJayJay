@@ -46,6 +46,14 @@ public class FunctionPracticeTest {
         tester.add(20);
         assertEquals(4, FunctionPractice.findFirstLargest(tester));
     }
+
+    @Test
+    public void goodDogTest(){
+        assertEquals(true,FunctionPractice.isGoodDog(3, 10, true) );
+        assertEquals(false, FunctionPractice.isGoodDog(9, 15, false));
+        assertEquals(false, FunctionPractice.isGoodDog(15,2,true));
+        assertEquals(false, FunctionPractice.isGoodDog(7, 1, false));
+    }
     @Test
     public void lastLargestTest(){
         List<Integer>tester=new ArrayList<Integer>();
