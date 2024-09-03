@@ -2,6 +2,10 @@ package edu.ithaca.dragon.practice;
 
 import java.util.List;
 
+
+
+import javax.management.RuntimeErrorException;
+
 public class FunctionPractice {
 
     /**
@@ -9,7 +13,23 @@ public class FunctionPractice {
      * @throws IllegalArgumentException if any of the numbers is negative
      */
     public static int largestOfThree(int first, int second, int third){
-        throw new RuntimeException("Not Implemented");
+        if(first<0 || second<0 || third<0){
+            throw new IllegalArgumentException();
+        }
+        if(first>=second &&first>=third){
+            return first;
+        }
+        else if(second>=first&&second>=third){
+            return second;
+        }
+        else{
+            return third;
+        }
+    }
+
+    
+    public static void testLargestOfThree(){
+
     }
     
     /**
@@ -48,6 +68,10 @@ public class FunctionPractice {
      */
     public static String findFirstMostOccurencesOfLetter(List<String> words, char letter){
         throw new RuntimeException("Not Implemented");
+    }
+
+    public static void main(){
+
     }
 
 
