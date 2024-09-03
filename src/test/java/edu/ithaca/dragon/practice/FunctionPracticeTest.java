@@ -34,6 +34,20 @@ public class FunctionPracticeTest {
     }
 
     @Test
+    public void firstLargestTest(){
+        List<Integer>tester=new ArrayList<Integer>();
+        assertEquals(-1,FunctionPractice.findFirstLargest(tester));
+        tester.add(15);
+        tester.add(10);
+        assertEquals(0,FunctionPractice.findFirstLargest(tester));
+        tester.add(13);
+        tester.add(15);
+        assertEquals(0,FunctionPractice.findFirstLargest(tester));
+        tester.add(20);
+        assertEquals(4, FunctionPractice.findFirstLargest(tester));
+    }
+
+    @Test
     public void findMostTest(){
         List<String> tester= new ArrayList<String>();
         tester.add("howdy");
