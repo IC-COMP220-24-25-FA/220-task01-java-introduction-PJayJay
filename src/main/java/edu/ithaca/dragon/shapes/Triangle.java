@@ -2,7 +2,7 @@ package edu.ithaca.dragon.shapes;
 
 import javax.management.RuntimeErrorException;
 
-public class Triangle {
+public class Triangle implements Shape{
     private double height;
     private double width;
 
