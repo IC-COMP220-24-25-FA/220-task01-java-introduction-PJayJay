@@ -1,8 +1,9 @@
 package edu.ithaca.dragon.shapes;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Random;
 
 public class ShapeMain {
     
@@ -10,7 +11,7 @@ public class ShapeMain {
         //Make a list of 5 randomly-sized rectangles and print their area and the largest line that can be drawn through them
         //Allow the user to choose one, double the size of that one, and print them all again
         //Use a loop to repeat the process 5 times
-        Rectangle a=new Rectangle(5,5);
+        /*Rectangle a=new Rectangle(5,5);
         Rectangle b=new Rectangle(10,2);
         Rectangle c=new Rectangle(.5,1);
         Rectangle d=new Rectangle(15,20);
@@ -36,6 +37,25 @@ public class ShapeMain {
                 listed.get(whichOne).doubleSize();
             }
 
+        }*/
+        List<Shape> listed=new ArrayList<Shape>();
+        Random rand=new Random();
+        for(int i =0;i<10;i++){
+            int randomly=rand.nextInt(3);
+            if(randomly==0){
+                Shape uno=new Circle(5);
+                listed.add(uno);
+            }
+            else if(randomly==1){
+                Shape dos=new Rectangle(5,5);
+                listed.add(dos);
+            }
+            else{
+                Shape tres=new Triangle(5,5);
+                listed.add(tres);
+            }
+            System.out.println(listed.get(i));
         }
+
     }
 }
