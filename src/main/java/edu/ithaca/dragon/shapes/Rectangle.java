@@ -11,6 +11,10 @@ public class Rectangle {
         this.width=width;
     }
 
+    public String toString(){
+        return "This rectangle is "+length+" long and "+width+" wide";
+    }
+
     public double calcArea(){
        return this.length*this.width;
     }

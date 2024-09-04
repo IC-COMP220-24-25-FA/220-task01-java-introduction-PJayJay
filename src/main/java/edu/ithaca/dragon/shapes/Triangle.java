@@ -11,6 +11,10 @@ public class Triangle {
         width=w;
     }
 
+    public String toString(){
+        return "This triangle is "+height+" high and "+width+" wide";
+    }
+
     public double calcArea(){
 
         return (height*width)/2.0;

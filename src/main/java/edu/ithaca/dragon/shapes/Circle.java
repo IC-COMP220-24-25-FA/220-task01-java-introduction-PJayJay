@@ -13,6 +13,10 @@ public class Circle {
         this.radius = radius;
     }
 
+    public String toString(){
+        return "This circle has a radius of "+radius;
+    }
+
     /**
      * @return the area of this circle
      */
