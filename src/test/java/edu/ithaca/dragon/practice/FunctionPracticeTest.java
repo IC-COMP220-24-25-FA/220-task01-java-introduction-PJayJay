@@ -6,6 +6,9 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.jupiter.api.Test;
 
 public class FunctionPracticeTest {
@@ -24,7 +27,59 @@ public class FunctionPracticeTest {
 
     @Test
     public void calcSalePriceTest(){
-        fail("Not implemented yet");
+        assertEquals(20, FunctionPractice.calcSalePrice(40,.60,.25));
+        assertEquals(44.1,FunctionPractice.calcSalePrice(60, .30, .050));
+        assertEquals(16.8, FunctionPractice.calcSalePrice(30, .5, .12));
+        assertEquals(82.5, FunctionPractice.calcSalePrice(100,.25,.1));
+    }
+
+    @Test
+    public void firstLargestTest(){
+        List<Integer>tester=new ArrayList<Integer>();
+        assertEquals(-1,FunctionPractice.findFirstLargest(tester));
+        tester.add(15);
+        tester.add(10);
+        assertEquals(0,FunctionPractice.findFirstLargest(tester));
+        tester.add(13);
+        tester.add(15);
+        assertEquals(0,FunctionPractice.findFirstLargest(tester));
+        tester.add(20);
+        assertEquals(4, FunctionPractice.findFirstLargest(tester));
+    }
+
+    @Test
+    public void goodDogTest(){
+        assertEquals(true,FunctionPractice.isGoodDog(3, 10, true) );
+        assertEquals(false, FunctionPractice.isGoodDog(9, 15, false));
+        assertEquals(false, FunctionPractice.isGoodDog(15,2,true));
+        assertEquals(false, FunctionPractice.isGoodDog(7, 1, false));
+    }
+    @Test
+    public void lastLargestTest(){
+        List<Integer>tester=new ArrayList<Integer>();
+        assertEquals(-1,FunctionPractice.findLastLargest(tester));
+        tester.add(15);
+        tester.add(10);
+        assertEquals(0,FunctionPractice.findLastLargest(tester));
+        tester.add(13);
+        tester.add(15);
+        assertEquals(3,FunctionPractice.findLastLargest(tester));
+        tester.add(20);
+        assertEquals(4, FunctionPractice.findLastLargest(tester));
+    }
+
+    @Test
+    public void findMostTest(){
+        List<String> tester= new ArrayList<String>();
+        tester.add("howdy");
+        tester.add("wow");
+        tester.add("wowww");
+        assertEquals("wowww", FunctionPractice.findFirstMostOccurencesOfLetter(tester, 'w'));
+        tester.add("nahh");
+        assertEquals("nahh", FunctionPractice.findFirstMostOccurencesOfLetter(tester, 'h'));
+        tester.add("thatd");
+        tester.add("what");
+        assertEquals("howdy", FunctionPractice.findFirstMostOccurencesOfLetter(tester, 'd'));
     }
     
 }
