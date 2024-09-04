@@ -43,17 +43,22 @@ public class ShapeMain {
         for(int i =0;i<10;i++){
             int randomly=rand.nextInt(3);
             if(randomly==0){
-                Shape uno=new Circle(5);
+                Shape uno=new Circle(rand.nextInt(20)+1);
                 listed.add(uno);
             }
             else if(randomly==1){
-                Shape dos=new Rectangle(5,5);
+                Shape dos=new Rectangle(rand.nextInt(20)+1,rand.nextInt(20)+1);
                 listed.add(dos);
             }
             else{
-                Shape tres=new Triangle(5,5);
+                Shape tres=new Triangle(rand.nextInt(20)+1,rand.nextInt(20)+1);
                 listed.add(tres);
             }
+            System.out.println(listed.get(i));
+        }
+        System.out.println("doubling now");
+        for(int i=0;i<10;i++){
+            listed.get(i).doubleSize();
             System.out.println(listed.get(i));
         }
 
